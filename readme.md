@@ -14,7 +14,7 @@
 
 ## Persyaratan Proyek & Tech
 
-* **Java 17+**, **Gradle** dengan **Fabric Loom** (versi cocok untuk 1.21.4).
+* **Java 21**, **Gradle** dengan **Fabric Loom** (versi cocok untuk 1.21.4).
 * **Dependencies:** Fabric API, JDA 5.x, Gson (untuk config), SLF4J simple (atau matikan logging JDA).
 * **Shading:** Shade JDA ke dalam mod jar (shadowJar) agar tidak bentrok dependensi.
 * **Package**: `com.example.discordcontrol` (boleh disesuaikan).

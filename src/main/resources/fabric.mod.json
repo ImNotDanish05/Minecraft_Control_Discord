@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "aria05",
+  "version": "${version}",
+  "name": "aria05",
+  "description": "This is my first plugin ever made",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/aria05/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.aria05.aria05.client.Aria05DataGenerator"
+    ],
+    "client": [
+      "org.aria05.aria05.client.Aria05Client"
+    ],
+    "main": [
+      "org.aria05.aria05.Aria05"
+    ]
+  },
+  "mixins": [
+    "aria05.mixins.json",
+    {
+      "config": "aria05.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
